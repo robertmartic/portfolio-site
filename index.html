@@ -1,89 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Robert Martić | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <nav class="navbar">
-      <div class="logo">Robert Martić</div>
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Robert Martic | Izrada web stranica</title>
+    <meta
+      name="description"
+      content="Robert Martic izradjuje moderne web stranice za obrte, male firme i samostalne profesionalce."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Robert Martic pocetna">
+        <span class="brand-mark">RM</span>
+        <span>Robert Martic</span>
+      </a>
 
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <button class="nav-toggle" type="button" aria-label="Otvori navigaciju" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <p class="hero-tag">Portfolio Website</p>
-        <h1>3D Artist, Archviz Creator & Game Developer</h1>
-        <p class="hero-text">
-          I create Blender renders, interior visualizations, and Unity game projects.
-          This website is my personal portfolio where I share my work and creative journey.
-        </p>
+      <nav class="site-nav" aria-label="Glavna navigacija">
+        <a href="#usluge">Usluge</a>
+        <a href="#proces">Proces</a>
+        <a href="#radovi">Radovi</a>
+        <a href="#cijene">Cijene</a>
+        <a class="nav-cta" href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
 
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-content">
+          <p class="eyebrow">Web stranice za obrte i male firme</p>
+          <h1>Moderna web stranica koja jasno predstavlja tvoj posao.</h1>
+          <p class="hero-copy">
+            Izradjujem brze, pregledne i profesionalne web stranice za ljude koji zele izgledati ozbiljno online,
+            dobiti vise upita i imati stranicu koju je lako odrzavati.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#kontakt">Zatrazi ponudu</a>
+            <a class="button secondary" href="#radovi">Pogledaj pristup</a>
+          </div>
+          <div class="hero-proof" aria-label="Prednosti">
+            <span>Responzivni dizajn</span>
+            <span>SEO osnove</span>
+            <span>Brza isporuka</span>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Me</h2>
+        <div class="hero-panel" aria-label="Pregled poslovne web stranice">
+          <img src="assets/hero-web-design.png" alt="Laptop s modernom poslovnom web stranicom" />
+          <div class="hero-stats">
+            <article>
+              <strong>5 sek.</strong>
+              <span>jasan prvi dojam</span>
+            </article>
+            <article>
+              <strong>100%</strong>
+              <span>mobilna prilagodba</span>
+            </article>
+            <article>
+              <strong>SEO</strong>
+              <span>osnovna priprema</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div>
+          <p class="eyebrow">Sto dobivas</p>
+          <h2>Stranicu koja izgleda profesionalno, ali i radi svoj posao.</h2>
+        </div>
         <p>
-          My name is Robert Martić. I enjoy creating visual projects in Blender,
-          especially renders and archviz scenes, and I also build games and prototypes in Unity.
-          My goal is to keep improving step by step and turn this website into a complete creative portfolio.
+          Fokus je na jasnoj poruci, kvalitetnom izgledu, dobroj navigaciji i kontaktu koji posjetitelja vodi prema
+          upitu. Bez nepotrebne kompliciranosti, ali s dovoljno paznje da tvoj posao djeluje pouzdano.
         </p>
-      </div>
-    </section>
+      </section>
 
-    <section id="projects" class="section alt-section">
-      <div class="container">
-        <h2>Projects</h2>
-
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3>Blender / Archviz</h3>
-            <p>
-              Interior renders, environment visualization, product renders and other 3D work made in Blender.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <h3>Unity Projects</h3>
-            <p>
-              Game prototypes, survival mechanics, gameplay systems and personal game development experiments.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <h3>More Coming Soon</h3>
-            <p>
-              This section will grow over time with new work, screenshots, videos and detailed project pages.
-            </p>
-          </article>
+      <section class="section services" id="usluge">
+        <div class="section-heading">
+          <p class="eyebrow">Usluge</p>
+          <h2>Web rjesenja za stvarne poslovne potrebe</h2>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>You can reach me here:</p>
-        <p class="contact-email">robertmartic@proton.me</p>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
+        <div class="card-grid">
+          <article class="service-card">
+            <span class="icon">01</span>
+            <h3>Poslovne web stranice</h3>
+            <p>Profesionalna stranica za obrt, firmu, uslugu ili osobni brand, prilagodjena mobitelima i racunalima.</p>
+          </article>

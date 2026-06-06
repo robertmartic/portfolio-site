@@ -1,0 +1,100 @@
+:root {
+  --ink: #17211d;
+  --muted: #5d6a63;
+  --paper: #fbfaf6;
+  --surface: #ffffff;
+  --line: #dfe5dd;
+  --green: #1f6f50;
+  --green-dark: #164a38;
+  --mint: #e5f4ed;
+  --gold: #c8933f;
+  --coral: #d4664f;
+  --shadow: 0 24px 70px rgba(31, 45, 38, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px clamp(20px, 5vw, 72px);
+  background: rgba(251, 250, 246, 0.9);
+  border-bottom: 1px solid rgba(223, 229, 221, 0.8);
+  backdrop-filter: blur(14px);
+}
+
+.brand,
+.site-nav,
+.hero-actions,
+.hero-proof,
+.contact-list,
+.site-footer {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  gap: 10px;
+  font-weight: 800;
+}
+
+.brand-mark {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  color: #fff;
+  background: var(--green);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.site-nav {
+  gap: 22px;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.site-nav a:hover {
+  color: var(--green);
+}
+
+.nav-cta {
+  padding: 10px 16px;
+  color: #fff !important;
+  background: var(--ink);
+  border-radius: 8px;
+}
+
+.nav-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: 8px;
